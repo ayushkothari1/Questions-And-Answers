@@ -11,7 +11,7 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels("ram duhai sree ram duahi mere ram  sree ram"));
+// console.log(countVowels("ram duhai sree ram duahi mere ram  sree ram"));
 
 function top(naam) {
   const me = "AaYyUuSsHhKkOoTtRrIi";
@@ -23,4 +23,18 @@ function top(naam) {
   }
   return count;
 }
-console.log(top("zzzzzzzzzzz ayush mera naame liya mujhe yaad kiya ha ha ha "));
+// console.log(top("zzzzzzzzzzz ayush mera naame liya mujhe yaad kiya ha ha ha "));
+
+
+function countvowels(str){
+  const vowels = "auoeiAUOEI";
+  let count = 0;
+  for (const char of str) {
+     if (vowels.includes(char)
+     ) {
+      count++;
+     } 
+  }
+  return count;
+}
+console.log(countVowels("my why cry shy try aaaaaioueeis"));
