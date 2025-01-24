@@ -37,4 +37,27 @@ function countvowels(str){
   }
   return count;
 }
-console.log(countVowels("my why cry shy try aaaaaioueeis"));
+// console.log(countVowels("my why cry shy try aaaaaioueeis"));
+
+
+function countAlphabets(str){
+   const vowels2 = "aeouiAEOUI";
+   const Consonants = "bBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTvVwWxXyYzZ";
+   const total = "aeouiAEOUIbBcCdDfFgGhHjJkKlLmMnNpPqQrRsStTvVwWxXyYzZ";
+   let countVowels = 0;
+   let countConsonants = 0;
+   let countAlphabets = 0;
+   for (const element of str) {
+       if(vowels2.includes(element)){
+        countVowels++;
+       }
+       if(Consonants.includes(element)){
+        countConsonants++;
+       }
+       if(total.includes(element)){
+        countAlphabets++;
+       }
+   }
+   return {countAlphabets, countConsonants, countVowels}
+}
+console.log(countAlphabets("ram me agar shakti hai to kyu nhi aate idhar mere man ke dwar khole hai maine idhar ha ha"));
