@@ -16,3 +16,22 @@ function removeDuplicates(str){
 }
 
 console.log(removeDuplicates("aayyyuuussshhh"));
+
+
+function duplicat(str){
+    let result = "";
+    let chatObject = {};
+    for (let index = 0; index < str.length; index++) {
+        const char = str[index];
+        if (!chatObject[char]) {
+            result += char;
+            chatObject[char] = true;
+        }
+        
+    }
+    return result
+}
+
+console.log(duplicat("ramnaamnaamjapnaparayamaalapna"));
+
+
