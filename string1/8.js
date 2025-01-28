@@ -14,5 +14,15 @@ let usedscript = string.includes("script");
 // startsWith(searchValue, fromIndex):
 // Does "hello".startsWith("he") return true or false?
 
-console.log("hello".startsWith("he"));
-console.log("hello world".startsWith("world"));
+// console.log("hello".startsWith("he"));
+// console.log("hello world".startsWith("world"));
+
+
+
+
+// endsWith(searchValue, length):
+// What will "javascript".endsWith("script") return?
+let endScript = string.endsWith("script");
+console.log(endScript);
+
+console.log("hello world".endsWith("world"));
