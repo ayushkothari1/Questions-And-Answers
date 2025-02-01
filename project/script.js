@@ -27,6 +27,8 @@ start.addEventListener("click", function(){
 close.addEventListener("click", function(){
     if(timer !== null){
         clearInterval(timer)
+        hn.innerHTML = "00";
+    huhu.innerHTML = "00";
     }
     close.style.display = "none";
     start.style.display = "block";

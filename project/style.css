@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background: white;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    gap: 100px;
+}
+.person{
+    width: 300px;
+    height: 400px;
+    animation: person 10s 5s linear;
+    /* rotate: 270deg;
+    margin-top: 160px; */
+}
+.second{
+    position: relative;
+}
+.gun{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+.bullet{
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 160px;
+    right: 244px;
+    animation: bullet 5s linear;
+}
+@keyframes bullet {
+    0%{
+        right: 244px;
+    }
+    100%{
+        right: 515px;
+    }
+
+}
+@keyframes person {
+    0%{
+        rotate: 360deg;
+    }
+    10%{
+        margin-right: 20px;
+      rotate: 350deg;
+      margin-top: 10px;
+    }
+    20%{
+        rotate: 340deg;
+        margin-top: 10px;
+    }
+    30%{
+        rotate: 330deg;
+        margin-top: 10px;
+    }
+    35%{
+        margin-top: 30px;
+        rotate: 320deg;
+    }
+    40%{
+        margin-top: 50px;
+        rotate: 310deg;
+    }
+    50%{
+        margin-top: 70px;
+        rotate: 300deg;
+    }
+    60%{
+        margin-top: 90px;
+        rotate: 290deg;
+    }
+    70%{
+        margin-top: 110px;
+        rotate: 280deg;
+    }
+    80%{
+        margin-top: 130px;
+        rotate: 275deg;
+    }
+    90%{
+        margin-top: 150px;
+        rotate: 270deg;
+    }
+    100%{
+        margin-top: 160px;
+      rotate: 270deg;
+    }
+}
