@@ -1,6 +1,5 @@
 // charAt(index):
 
-
 // What would "hello".charAt(2) return?
 
 // console.log("hello".charAt(2));
@@ -10,16 +9,10 @@ let str = "ram naam satya hai";
 
 // console.log(str.charAt(5));
 
-
-
-
 // What will "hello".charCodeAt(1) return?
 // Unicode
 // console.log("helloe".charCodeAt(5));
 // console.log("ayush".charCodeAt(0));
-
-
-
 
 // indexOf(searchValue, fromIndex):
 
@@ -27,9 +20,6 @@ let str = "ram naam satya hai";
 
 // console.log("javascript".indexOf("a", 3));
 // console.log("apple".indexOf("e"));
-
-
-
 
 // lastIndexOf(searchValue, fromIndex):
 

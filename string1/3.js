@@ -17,14 +17,14 @@ console.log(reversString("iahud mar"));
 // }
 // console.log(sameInReverse("maram"));
 
-function sameInReverse(str){
+function sameInReverse(str) {
   const cleanedstr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
   let left = 0;
   let right = cleanedstr.length - 1;
 
-  while(left < right){
-    if(cleanedstr[left] !== cleanedstr[right]){
-      return false
+  while (left < right) {
+    if (cleanedstr[left] !== cleanedstr[right]) {
+      return false;
     }
     left++;
     right--;

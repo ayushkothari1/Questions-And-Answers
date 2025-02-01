@@ -8,17 +8,11 @@ let usedscript = string.includes("script");
 
 // console.log("hello".includes("o", 3));
 
-
-
-
 // startsWith(searchValue, fromIndex):
 // Does "hello".startsWith("he") return true or false?
 
 // console.log("hello".startsWith("he"));
 // console.log("hello world".startsWith("world"));
-
-
-
 
 // endsWith(searchValue, length):
 // What will "javascript".endsWith("script") return?

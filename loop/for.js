@@ -41,28 +41,18 @@ for (let i = 1; i <= 3; i++) {
   }
 }
 
-
-
-
-
-
 // Question: Write a program that iterates over the properties of the object {name: "John", age: 30, city: "New York"} using a for...in loop and prints each key and value.
 
-let person = {name: "John", age: 30, city: "New York"};
+let person = { name: "John", age: 30, city: "New York" };
 
 for (const key in person) {
-    // console.log(key + ": " + person[key]);
-      }
+  // console.log(key + ": " + person[key]);
+}
 
+//   Question: Write a program that iterates through an array of numbers [10, 20, 30] using the for...of loop and prints each value.
 
-
-
-
-    //   Question: Write a program that iterates through an array of numbers [10, 20, 30] using the for...of loop and prints each value.
-
-let value = [10, 20, 30]
+let value = [10, 20, 30];
 
 for (const element of value) {
-    console.log(element);
-    
+  console.log(element);
 }

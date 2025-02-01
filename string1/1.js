@@ -6,8 +6,7 @@ function reverseString(str) {
 }
 // console.log(reverseString("enaj mar"));
 
-
-function reverseDone(rvr){
+function reverseDone(rvr) {
   return rvr.split("").reverse().join("");
 }
 // console.log(reverseDone("ram chahe mujhe raam chahe"));
@@ -24,11 +23,10 @@ function reverseDone(rvr){
 
 // or
 
-function stringLength(str){
+function stringLength(str) {
   let length = 0;
   for (let i = 0; str[i] !== undefined; i++) {
-    length++
-    
+    length++;
   }
   return length;
 }
