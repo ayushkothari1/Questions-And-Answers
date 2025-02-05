@@ -2,7 +2,7 @@
 
 // How would you extract "hel" from "hello" using slice()?
 
-// console.log("hello".slice(0, 3));
+console.log("hello".slice(0, 3));
 // console.log('javascript'.slice(4, 7));
 
 // substring(startIndex, endIndex):
