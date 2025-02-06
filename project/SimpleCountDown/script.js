@@ -1,8 +1,8 @@
-const hehe = document.querySelector("#hehe");
-const huhu = document.querySelector("#huhu");
+const time = document.querySelector("#time");
+const second = document.querySelector("#second");
 const start = document.querySelector("#start");
 const close = document.querySelector("#stop");
-const hn = document.querySelector("#hn");
+const minute = document.querySelector("#minute");
 let val = "ayush";
 let count = 0;
 let countB = 0;
@@ -20,16 +20,16 @@ start.addEventListener("click", function () {
     let c = count < 10 ? "0" + count : count;
     let c2 = countB < 10 ? "0" + countB : countB;
 
-    hn.innerHTML = c;
-    huhu.innerHTML = c2;
+    minute.innerHTML = c;
+    second.innerHTML = c2;
   }, 100);
 });
 
 close.addEventListener("click", function () {
   if (timer !== null) {
     clearInterval(timer);
-    hn.innerHTML = "00";
-    huhu.innerHTML = "00";
+    minute.innerHTML = "00";
+    second.innerHTML = "00";
   }
   close.style.display = "none";
   start.style.display = "block";

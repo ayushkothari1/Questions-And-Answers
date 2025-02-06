@@ -13,4 +13,4 @@ console.log(result1);
 const arr2 = [1, 2, 3];
 const result2 = arr2.splice(1, 1, 4)
 console.log(arr2);
-console.log(result2);
+// console.log(result2);
