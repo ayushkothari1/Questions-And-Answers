@@ -11,3 +11,9 @@ let arr = ["apple", "banana", "cherry"];
 arr.forEach(function (e) {
   console.log(e);
 });
+
+let arr2 = ["ram", "syam", "khatri"];
+arr2.forEach(function(e){
+  console.log(e);
+  
+})
