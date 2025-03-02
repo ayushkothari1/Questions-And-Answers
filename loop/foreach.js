@@ -13,7 +13,6 @@ arr.forEach(function (e) {
 });
 
 let arr2 = ["ram", "syam", "khatri"];
-arr2.forEach(function(e){
+arr2.forEach(function (e) {
   console.log(e);
-  
-})
+});

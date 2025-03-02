@@ -17,7 +17,7 @@ const result = str.match(/e/);
 
 // What will "abracadabra".matchAll(/a/g) return?
 
-console.log("abracadabra".matchAll(/a/g));
+// console.log("abracadabra".matchAll(/a/g));
 // for (const match of "abracadabra".matchAll(/a/g)) {
 //     console.log(match);
 //   }
@@ -29,5 +29,5 @@ console.log("abracadabra".matchAll(/a/g));
 
 // What does "hello world".search(/world/) return?
 
-console.log("ram jayanti".search(/jayanti/));
-console.log("ram".search(/b/));
+// console.log("ram jayanti".search(/jayanti/));
+// console.log("ram".search(/b/));
