@@ -8,8 +8,8 @@ while (num <= 5) {
 
 // Question: Write a program that prints the numbers from 1 to 5 using a do while loop.
 
-// let index = 1;
-// do {
-//   console.log(index);
-//   index++;
-// } while (index <= 5);
+let index = 1;
+do {
+  console.log(index);
+  index++;
+} while (index <= 5);
