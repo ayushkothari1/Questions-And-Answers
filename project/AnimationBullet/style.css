@@ -21,7 +21,7 @@ body {
 .person {
   width: 300px;
   height: 400px;
-  animation: person 3s 5s linear;
+  animation: person 3s 5s linear forwards;
   /* rotate: 270deg;
     margin-top: 160px; */
 }
