@@ -11,6 +11,15 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.hit {
+  padding: 6px 13px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid red;
+  background: red;
+  color: white;
+}
 .container {
   background: white;
   width: 80%;
@@ -21,9 +30,11 @@ body {
 .person {
   width: 300px;
   height: 400px;
-  animation: person 3s 5s linear forwards;
   /* rotate: 270deg;
-    margin-top: 160px; */
+  margin-top: 160px; */
+}
+.person2 {
+  animation: person 3s 5s linear forwards;
 }
 .first {
   position: relative;
@@ -51,7 +62,10 @@ body {
   position: absolute;
   top: 160px;
   right: 348%;
-  animation: bullet 5s linear;
+  display: none;
+}
+.bullet2 {
+  animation: bullet 5s linear forwards;
 }
 @keyframes bullet {
   0% {
@@ -110,4 +124,17 @@ body {
     margin-top: 160px;
     rotate: 270deg;
   }
+}
+.score {
+  display: none;
+  position: absolute;
+  top: 80%;
+  border: 2px solid black;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: blue;
+}
+.score span {
+  color: red;
 }
