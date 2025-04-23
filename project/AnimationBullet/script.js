@@ -8,7 +8,7 @@ hit.addEventListener("click", function () {
   bullet.style.display = "block";
   bullet.classList.add("bullet2");
   person.classList.add("person2");
-  hit.style.display = "none";
+  hit.style.visibility = "hidden";
   num++;
   score.innerHTML = `Score is <span>${num}</span>`;
   setTimeout(function () {

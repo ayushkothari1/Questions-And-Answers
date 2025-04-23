@@ -37,7 +37,7 @@ for (let element = 1; element < 10; element++) {
 
 for (let i = 1; i <= 3; i++) {
   for (let j = 0; j <= 3; j++) {
-    //  console.log(i + ' * ' + j + ' = ' + (i * j));
+    console.log(i + " * " + j + " = " + i * j);
   }
 }
 
@@ -46,7 +46,7 @@ for (let i = 1; i <= 3; i++) {
 let person = { name: "John", age: 30, city: "New York" };
 
 for (const key in person) {
-  // console.log(key + ": " + person[key]);
+  console.log(key + ": " + person[key]);
 }
 
 //   Question: Write a program that iterates through an array of numbers [10, 20, 30] using the for...of loop and prints each value.
@@ -55,4 +55,10 @@ let value = [10, 20, 30];
 
 for (const element of value) {
   console.log(element);
+}
+
+for (let index = 10; index <= 10; index++) {
+  for (let tool = 1; tool <= 10; tool++) {
+    console.log(index + "*" + tool + "=" + index * tool);
+  }
 }
