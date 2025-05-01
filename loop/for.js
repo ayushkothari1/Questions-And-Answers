@@ -12,7 +12,7 @@ for (let index = 1; index <= 10; index++) {
 }
 // OOrr
 for (let index = 2; index <= 20; index += 2) {
-  // console.log(index);
+  console.log(index);
 }
 
 // // Question: Write a program that prints the numbers from 1 to 10, but stops when it reaches 6 (use break).
@@ -57,7 +57,7 @@ for (const element of value) {
   console.log(element);
 }
 
-for (let index = 10; index <= 10; index++) {
+for (let index = 10; index <= 11; index++) {
   for (let tool = 1; tool <= 10; tool++) {
     console.log(index + "*" + tool + "=" + index * tool);
   }
