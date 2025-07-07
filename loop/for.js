@@ -62,3 +62,15 @@ for (let index = 10; index <= 11; index++) {
     console.log(index + "*" + tool + "=" + index * tool);
   }
 }
+
+// Print numbers from 1 to 10 using a loop.
+
+for (let x = 1; x < 11; x++) {
+  console.log(x);
+}
+
+// Print all even numbers between 1 and 20.
+
+for (let index = 2; index <= 20; index += 2) {
+  console.log(index);
+}
