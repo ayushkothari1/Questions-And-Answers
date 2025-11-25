@@ -25,5 +25,14 @@ let str = "ram naam satya hai";
 
 // What will "banana".lastIndexOf("a") return?
 
-console.log("banana".lastIndexOf("a"));
-console.log("bananazzaaaaaaaaaa".lastIndexOf("a", 20));
+// console.log("banana".lastIndexOf("a"));
+// console.log("bananazzaaaaaaaaaa".lastIndexOf("a", 20));
+
+let newString =
+  "ram ne kaha ki ye to hona hi tha n\nhi is it really po\nssible?";
+
+console.log(newString);
+
+let poem =
+  "Roses are red,\nViolets are blue,\nJavaScript is fun,\nAnd so are you.";
+console.log(poem);
