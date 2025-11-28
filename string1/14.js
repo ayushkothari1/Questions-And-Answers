@@ -7,3 +7,7 @@ console.log(quote);
 
 let string = "rram naam japna !";
 console.log(string.includes(" naam", "0"));
+
+let t = "rama";
+t = "rami";
+console.log(t);
