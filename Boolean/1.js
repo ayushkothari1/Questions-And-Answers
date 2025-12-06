@@ -21,3 +21,9 @@ console.log(Math.cbrt(1331));
 console.log(Math.abs(-34));
 
 console.log(Math.pow(11, 3));
+
+function trueOr(value) {
+  return value === true || value === false;
+}
+console.log(trueOr(false));
+console.log(trueOr(2));
