@@ -2,11 +2,11 @@
 
 // What does arr.push(4) do to the array arr = [1, 2, 3]?
 
-// const arr = [1, 2, 3];
-// // console.log(arr);
-// const result = arr.push(45);
+const arr = [1, 2, 3];
 // console.log(arr);
-// console.log(result);
+const result = arr.push(45);
+console.log(arr);
+console.log(result);
 
 // const result2 = arr.push(5, 8, 6);
 // console.log(arr);
@@ -17,6 +17,10 @@
 // const arr2 = [1, 2, 34];
 // console.log(arr2.pop());
 // console.log(arr2);
+const arr9 = [1, 4, 5];
+const result9 = arr9.pop();
+console.log(arr9);
+console.log(result9);
 
 // unshift(element1, ..., elementN):
 
@@ -53,7 +57,11 @@ console.log(items);
 console.log(items2);
 
 let data = [];
-data.push(1);
+data.push(1, 2, 4, 5);
 data.push(2);
-data.unshift(0);
+data.unshift(0, 4, 5);
 console.log(data);
+
+// push and unshift are similar as push add the end and unshift add the start of array and they both return the number of total
+
+// like push and unshift are similar so pop and shift are also similar one remove the end of array and return itself and other remove the start of array and return itself(first or last index of array)
