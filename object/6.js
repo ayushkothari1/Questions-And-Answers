@@ -31,3 +31,30 @@ function alokechalu(city, state) {
   return { city, state };
 }
 console.log(alokechalu("dehradun", "uttarkhand"));
+
+const person2 = {
+  name: "Bob",
+  age: 30,
+  sayHello: function () {
+    return "Hello, my name is " + this.name;
+  },
+};
+
+console.log(person2.sayHello());
+
+function Perso(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const p1 = new Perso("Alice", 25);
+console.log(p1.name); // "Alice"
+console.log(p1.age); // "Alice"
+
+function rakehs(ek, two) {
+  this.ek = ek;
+  this.two = two;
+}
+const c = new rakehs(3, 4);
+console.log(c.ek);
+console.log(c.two);
