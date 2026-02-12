@@ -74,3 +74,75 @@ for (let x = 1; x < 11; x++) {
 for (let index = 2; index <= 20; index += 2) {
   console.log(index);
 }
+
+let nations = {
+  GreatPowers: {
+    superPoer: "america",
+    lesserBuStillSuperPower: "China",
+  },
+  SupriorPower: "India",
+  reginalPower: ["Japan", "Iran", "UK"],
+};
+for (const element in nations) {
+  const key = nations[element];
+  if (typeof key === "object" && !Array.isArray(key)) {
+    console.log(element + " : ");
+    for (const passkey in key) {
+      console.log("  " + passkey + " : " + key[passkey]);
+    }
+  } else {
+    console.log(element + " : " + key);
+  }
+}
+
+const objects = {
+  sena: "bahubali",
+  king: "bhallaldeva",
+  slave: "kattapa",
+  queenMother: "shivganmi",
+};
+for (const key in objects) {
+  const element = objects[key];
+  console.log(key + " --  " + element);
+
+  // console.log(element);
+}
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+const numbers = [1, 2, 3, 4, 5];
+
+for (const [index, num] of numbers.entries()) {
+  console.log("Index of " + num + " is " + index);
+}
+
+const str = "freeCodeCamp";
+
+// for (let char of str) {
+//   console.log(char);
+// }
+let i = "freecodecamp";
+
+// for (i = "f"; i < "p"; i++) {
+//   console.log(i);
+// }
+
+for (const element of i) {
+  console.log(element);
+}
+
+const people = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Jim", age: 40 },
+];
+
+for (const person of people) {
+  console.log(`${person.name} is ${person.age} years old`);
+}
+
+for (const [key, value] of Object.entries(people)) {
+  console.log(`${value.name} is ${value.age} and the index is ${key}`);
+}
