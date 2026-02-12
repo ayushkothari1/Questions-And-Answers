@@ -146,3 +146,60 @@ for (const person of people) {
 for (const [key, value] of Object.entries(people)) {
   console.log(`${value.name} is ${value.age} and the index is ${key}`);
 }
+
+const fruit = {
+  name: "apple",
+  color: "red",
+  price: 0.99,
+};
+
+for (const prop in fruit) {
+  console.log(fruit[prop]);
+}
+
+const person1 = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    state: "CA",
+  },
+};
+
+for (const prop in person1) {
+  // console.log(prop + " : " + person1[prop]);
+  const element = person1[prop];
+  if (typeof element === "object" && !Array.isArray(element)) {
+    console.log(prop + " - ");
+    for (const passkey in element) {
+      console.log(" " + passkey + " : " + element[passkey]);
+    }
+  } else {
+    console.log(prop + " : " + element);
+  }
+}
+
+const person2 = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    state: "CA",
+  },
+};
+
+function isObject(obj) {
+  return typeof obj === "object" && !Array.isArray(obj) && obj !== null;
+}
+
+for (const prop in person2) {
+  if (isObject(person2[prop])) {
+    for (const nestedProp in person2[prop]) {
+      console.log(person2[prop][nestedProp]);
+    }
+  } else {
+    console.log(person2[prop]);
+  }
+}
