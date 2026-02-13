@@ -231,3 +231,19 @@ for (i = 1; i <= 10; i++) {
   r = i * 2;
   console.log(r);
 }
+
+function getVowelCount(sentence) {
+  const vowels = ["a", "i", "o", "u", "e"];
+  const sentenceEl = sentence.toLowerCase();
+  // const sentencel = sentence.toUpperCase();
+
+  let count = 0;
+  for (const element of sentenceEl) {
+    if (vowels.includes(element)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(getVowelCount("aaaaa"));
