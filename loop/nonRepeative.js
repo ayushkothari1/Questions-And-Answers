@@ -9,4 +9,4 @@ function firstNonRepeat(str) {
   return undefined;
 }
 
-console.log(firstNonRepeat("aabbccddeffg")); // g
+console.log(firstNonRepeat("aabbccddeffg"));
