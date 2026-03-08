@@ -12,7 +12,8 @@
 //   }
 //   return sum;
 // }
-// console.log(getAverage([50, 35, 35]));
+
+console.log(getAverage([50, 35, 35]));
 
 function getAverage(scores) {
   let average = 0;
