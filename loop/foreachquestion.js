@@ -27,3 +27,34 @@ let matrix = [
 matrix.flat().forEach((e) => {
   console.log(e);
 });
+
+const arr = [1, 2, 3];
+arr.forEach((num) => {
+  setTimeout(() => console.log(num), 1000);
+});
+
+const obj = {
+  multiplier: 2,
+  numbers: [1, 2, 3],
+  multiply() {
+    const self = this;
+    self.numbers.forEach(function (n) {
+      console.log(n * self.multiplier);
+    });
+  },
+};
+
+obj.multiply();
+
+const obj2 = {
+  kancha: 6,
+  player: ["ramshes", "suresh", "dinesh"],
+  theGame() {
+    const self = this;
+    self.player.forEach((e) => {
+      console.log(`${e} have ${self.kancha} kancha`);
+    });
+  },
+};
+
+obj2.theGame();
