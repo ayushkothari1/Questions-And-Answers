@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoot the target</title>
+  </head>
+  <body>
+    <select id="select-menu">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <input type="text" class="SelectClass" />
+    <script>
+      const selectMenu = document.getElementById("select-menu");
+      selectMenu.addEventListener("change", (event) => {
+        console.log(`You selected: ${event.target.value}`);
+      });
+      const selectInput = document.querySelector(".SelectClass");
+      selectInput.addEventListener("input", (event) => {
+        console.log(`You selected: ${event.target.value}`);
+      });
+    </script>
+  </body>
+</html>
